@@ -1,0 +1,6 @@
+#!/bin/sh
+# This must happen before any commands that depend on diverted configuration files
+#DEBHELPER#
+
+/bin/systemctl try-restart apache2
+

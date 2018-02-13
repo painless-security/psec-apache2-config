@@ -1,0 +1,10 @@
+Source: psec-apache2-config
+Maintainer: Jennifer Richards <jennifer@painless-security.com>
+Section: proprietary/net
+Priority: optional
+Build-Depends: debhelper (>= 9), config-package-dev
+
+Package: psec-apache2-config
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, apache2
+Description: Painless Security configuration for managed services
