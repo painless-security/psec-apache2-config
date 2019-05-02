@@ -1,3 +1,10 @@
+psec-apache2-config (2-1) unstable; urgency=medium
+
+  * Remove psec-port-80.conf to discourage broadly opening port 80
+  * Displace Apache2's default index.html with an emptier one
+
+ -- Painless Security <build@painless-security.com>  Thu, 2 May 2019 15:01:08 -0400
+
 psec-apache2-config (1-1) unstable; urgency=medium
 
   * Initial version.

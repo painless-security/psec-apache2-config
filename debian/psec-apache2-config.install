@@ -1,1 +1,3 @@
 apache2/* /etc/apache2
+index.html.psec /var/www/html
+
