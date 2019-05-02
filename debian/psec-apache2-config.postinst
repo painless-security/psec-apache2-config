@@ -2,5 +2,13 @@
 # This must happen before any commands that depend on diverted configuration files
 #DEBHELPER#
 
+dpkg-maintscript-helper rm_conffile \
+/etc/apache2/conf-available/psec-port-80.conf 2-1~ -- "$@"
+
+# Disable psec-port-80 if it's dangling, otherwise Apache complains
+if [ -h /etc/apache2/conf-enabled/psec-port-80.conf -a ! -f /etc/apache2/conf-enabled/psec-port-80.conf ]; then
+  a2disconf psec-port-80
+fi
+
 /bin/systemctl try-restart apache2
 
