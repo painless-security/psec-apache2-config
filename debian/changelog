@@ -1,3 +1,9 @@
+psec-apache2-config (2-2) unstable; urgency=medium
+
+  * Build using Jenkins pipeline (Jenkinsfile)
+
+ -- Painless Security <build@painless-security.com>  Fri, 13 Sep 2019 12:15:48 -0400
+
 psec-apache2-config (2-1) unstable; urgency=medium
 
   * Remove psec-port-80.conf to discourage broadly opening port 80
