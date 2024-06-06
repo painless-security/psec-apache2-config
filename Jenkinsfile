@@ -1,6 +1,6 @@
 pipeline {
   // Select build agent. This requires label 'debian'.
-  agent { label 'debian' }
+  agent { label "${env.DISTRIBUTION}" }
   
   // Build options
   options {
@@ -9,7 +9,7 @@ pipeline {
   
   // Sets environment for shell commands; available to Groovy script in env.*
   environment {
-    DISTRIBUTION = 'buster'
+    DISTRIBUTION = 'bookworm'
     ARCH = 'amd64'
 
     // n.b., the substitutions in the next lines are in Groovy, not shell script.
