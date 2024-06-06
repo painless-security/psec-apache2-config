@@ -1,6 +1,6 @@
 pipeline {
   // Select build agent. This requires label 'debian'.
-  agent { label "${env.DISTRIBUTION}" }
+  agent { label 'debian' }
   
   // Build options
   options {
